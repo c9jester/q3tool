@@ -28,4 +28,5 @@
     },
     "autoload": {
         "psr-0": { "q3tool": "" }
+    }
 }
