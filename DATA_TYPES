@@ -14,7 +14,8 @@ gear        (bitmask integer representing the gear allowed)
 redname     (name of the red team, as set by the config)
 bluename    (same as above, for the blue team)
 
-If the key you give is not one of those listed above, Q3Tool will search the server data array for the one you've provided. If it exists, it will return the value at that key. If not, it will return "UNRECOGNIZED KEY".
+If the key you give is not one of those listed above, Q3Tool will search the server data array for the one you've provided.
+If it exists, it will return the value at that key. If not, it will return "UNRECOGNIZED KEY".
 
 This means that you can literally get any info (CVAR) that the server sends as a reply to a getstatus packet.
 
