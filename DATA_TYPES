@@ -1,0 +1,25 @@
+This document outlines how to retrieve server information using Q3Tool. (https://github.com/c9jester/q3tool)
+
+Q3Tool includes several "convenience" keys in the array of information it pull from the server. These allow a simpler, more human-friendly way to get the most common information. Those keys are listed below:
+
+players     (number of players currently connected)
+playerlist  (multidimensional array contain player names, scores, and ping)
+map         (map currently being played)
+maxplayers  (the maximum number of players as set by the server's config)
+gametype    (current gametype represented in a human-friendly manner, ie. "Free For All")
+sgametype   ("short gametype"; same as above, but abbreviated, ie. "FFA")
+name        (server name, as set by the config)
+gear        (bitmask integer representing the gear allowed)
+redname     (name of the red team, as set by the config)
+bluename    (same as above, for the blue team)
+
+If the key you give is not one of those listed above, Q3Tool will search the server data array for the one you've provided. If it exists, it will return the value at that key. If not, it will return "UNRECOGNIZED KEY".
+
+This means that you can literally get ANY info (CVAR) that the server sends as a reply to a getstatus packet.
+
+Examples:
+
+$tool->get_info("g_motd")
+$tool->get_info("sv_dlURL")
+
+A full list of server CVARs for Urban Terror can be found here: http://www.urbanterror.info/support/180-server-cvars/
