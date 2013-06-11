@@ -14,7 +14,10 @@ Usage
 -----
 
 ```php
+// Using composer (https://packagist.org/packages/jester/q3tool)
+require('vendor/autoload.php');
 
+// Or stand-alone
 require('q3tool.php');
 
 // Default port, no RCON
