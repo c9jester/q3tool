@@ -1,5 +1,6 @@
 {
     "name": "jester/q3tool",
+    "version": "0.2.0",
     "type": "library",
     "description": "Quake 3 Server interaction for PHP",
     "keywords": ["quake", "game", "q3", "ioq3"],
