@@ -4,6 +4,8 @@
 class q3tool
 {
     // A couple of local vars to use
+    private $server;
+    private $port;
     private $password;
     public $player_data = array();
     public $server_data = array();
@@ -13,6 +15,8 @@ class q3tool
     {
         // Construction ahead.
         // Set the password and cache the server info
+        $this->server = $server;
+        $this->port = $port;
         $this->password = $password;
         $this->cache_info($server, $port);
     }
